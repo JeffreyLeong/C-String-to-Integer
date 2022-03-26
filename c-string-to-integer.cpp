@@ -18,7 +18,11 @@ int main()
     do
     {
         cout << "Enter an integer and press Return: ";
-
+        read_and_clean(n);
+        cout << "That string converts to the integer " << n << endl;
+        cout << "Again? (yes/no): ";
+        cin >> ans;
+        new_line();
     } while ((ans != 'n') && (ans != 'N'));
     
 }
